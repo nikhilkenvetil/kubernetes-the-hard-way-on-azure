@@ -323,7 +323,7 @@ KUBERNETES_PUBLIC_IP_ADDRESS=$(az network public-ip show -g kubernetes \
 Make a HTTP request for the Kubernetes version info:
 
 ```shell
-curl --cacert ca.pem https://$KUBERNETES_PUBLIC_IP_ADDRESS:6443/version
+curl --cacert ca.pem -k https://$KUBERNETES_PUBLIC_IP_ADDRESS:6443/version
 ```
 
 > output
