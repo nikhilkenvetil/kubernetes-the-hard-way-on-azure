@@ -5,7 +5,7 @@ It is a fork of the great [Kubernetes The Hard Way](https://github.com/kelseyhig
 
 Azure part is based on the superb translation done by [Jonathan Carter - @lostintangent](https://twitter.com/LostInTangent) in this [fork](https://github.com/lostintangent/kubernetes-the-hard-way). He is the one who is really behind the Azure "translation".
 
-This tutorial walks you through setting up Kubernetes the hard way. This guide is not for people looking for a fully automated command to bring up a Kubernetes cluster. If that's you then check out [Azure Container Services](https://azure.microsoft.com/en-us/services/container-service), or the [Getting Started Guides](http://kubernetes.io/docs/getting-started-guides).
+This tutorial walks you through setting up Kubernetes the hard way. This guide is not for people looking for a fully automated command to bring up a Kubernetes cluster. If that's you then check out [Azure Kubernetes Service]](https://azure.microsoft.com/en-us/products/kubernetes-service/), or the [Getting Started Guides](http://kubernetes.io/docs/getting-started-guides).
 
 Kubernetes The Hard Way is optimized for learning, which means taking the long route to ensure you understand each task required to bootstrap a Kubernetes cluster.
 
@@ -21,12 +21,12 @@ The target audience for this tutorial is someone planning to support a productio
 
 Kubernetes The Hard Way guides you through bootstrapping a highly available Kubernetes cluster with end-to-end encryption between components and RBAC authentication.
 
-* [Kubernetes](https://github.com/kubernetes/kubernetes) 1.17.3
-* [containerd Container Runtime](https://github.com/containerd/containerd) 1.3.3
+* [Kubernetes](https://github.com/kubernetes/kubernetes) 1.26.3
+* [containerd Container Runtime](https://github.com/containerd/containerd) 1.7.0
 * [gVisor](https://github.com/google/gvisor) latest
-* [CNI Container Networking](https://github.com/containernetworking/cni) 0.7.1
-* [etcd](https://github.com/coreos/etcd) v3.3.18
-* [CoreDNS](https://github.com/coredns/coredns) v1.6.7
+* [CNI Container Networking](https://github.com/containernetworking/cni) 1.1.2
+* [etcd](https://github.com/coreos/etcd) v3.5.7
+* [CoreDNS](https://github.com/coredns/coredns) v1.10.1
 
 ## Labs
 

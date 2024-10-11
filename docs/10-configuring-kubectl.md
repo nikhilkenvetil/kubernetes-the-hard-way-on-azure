@@ -4,6 +4,8 @@ In this lab you will generate a kubeconfig file for the `kubectl` command line u
 
 > Run the commands in this lab from the same directory used to generate the admin client certificates.
 
+Note: On Windows machines please run this command from C: drive to ensure they work 100%
+
 ## The Admin Kubernetes Configuration File
 
 Each kubeconfig requires a Kubernetes API Server to connect to. To support high availability the IP address assigned to the external load balancer fronting the Kubernetes API Servers will be used.
@@ -56,6 +58,7 @@ controller-manager   Healthy   ok
 scheduler            Healthy   ok
 etcd-0               Healthy   {"health": "true"}
 etcd-1               Healthy   {"health": "true"}
+etcd-2               Healthy   {"health": "true"}
 ```
 
 List the nodes in the remote Kubernetes cluster:
@@ -68,8 +71,8 @@ kubectl get nodes
 
 ```shell
 NAME       STATUS   ROLES    AGE   VERSION
-worker-0   Ready    <none>   66s   v1.17.3
-worker-1   Ready    <none>   62s   v1.17.3
+worker-0   Ready    <none>   98s   v1.26.3
+worker-1   Ready    <none>   95s   v1.26.3
 ```
 
 Next: [Provisioning Pod Network Routes](11-pod-network-routes.md)
